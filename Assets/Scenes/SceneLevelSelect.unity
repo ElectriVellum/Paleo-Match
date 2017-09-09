@@ -108,7 +108,7 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &565692213
+--- !u!1001 &46818923
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -151,7 +151,7 @@ Prefab:
         type: 2}
       propertyPath: _loadCanvasSystemPrefab
       value: 
-      objectReference: {fileID: 1150538938090562, guid: 247789d580288574abeb15f555b60292,
+      objectReference: {fileID: 1425285544502660, guid: e783ec75434aff248b33280bf72df6b5,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a9ac8f6004fc24ca0b39cd7147539a, type: 2}

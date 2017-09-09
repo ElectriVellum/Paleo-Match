@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Title
 {
@@ -23,6 +25,13 @@ namespace Assets.Scripts.Title
         public void OnButtonClick()
         {
             _animatorLoading.SetBool("Visible", true);
+            StartCoroutine(LoadLevelSelect());
+        }
+
+        private IEnumerator LoadLevelSelect()
+        {
+            yield return new WaitForSeconds(1.5f);
+            SceneManager.LoadSceneAsync("SceneLevelSelect", LoadSceneMode.Additive);
         }
     }
 }

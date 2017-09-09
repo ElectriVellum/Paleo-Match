@@ -52,5 +52,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clearCanvasSystem: 1
-  _loadCanvasSystemPrefab: {fileID: 1150538938090562, guid: 247789d580288574abeb15f555b60292,
-    type: 2}
+  _loadCanvasSystemPrefab: {fileID: 0}
