@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Common.ApplicationManagement
 {
@@ -21,6 +22,18 @@ namespace Assets.Scripts.Common.ApplicationManagement
         public ApplicationManager()
         {
             Instance = this;
+            _titleScene = string.Empty;
+        }
+
+        [SerializeField()]
+        private string _titleScene;
+
+        private void Start()
+        {
+            if (_titleScene != null)
+            {
+                SceneManager.LoadSceneAsync(_titleScene, LoadSceneMode.Additive);
+            }
         }
     }
 }
