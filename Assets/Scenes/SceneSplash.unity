@@ -448,9 +448,9 @@ MonoBehaviour:
   _soundsAudioSource: {fileID: 815658536}
   _titleBackgroundMusic: {fileID: 8300000, guid: 460bc00f0ee33b6499acfd0a7a54e270,
     type: 3}
-  _windowShowSound: {fileID: 0}
-  _windowHideSound: {fileID: 0}
-  _buttonClickSound: {fileID: 0}
+  _windowShowSound: {fileID: 8300000, guid: c5d65216ea89b694dad6c242637d29bd, type: 3}
+  _windowHideSound: {fileID: 8300000, guid: c5d65216ea89b694dad6c242637d29bd, type: 3}
+  _buttonClickSound: {fileID: 8300000, guid: 5b8e97c5b8b480e44b968dd4c842e4a7, type: 3}
 --- !u!1 &1521237281
 GameObject:
   m_ObjectHideFlags: 0
