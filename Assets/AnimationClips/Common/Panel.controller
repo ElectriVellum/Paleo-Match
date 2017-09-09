@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PanelInformation
+  m_Name: Panel
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Visible
@@ -13,7 +13,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -123,7 +123,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PanelInformationShown
+  m_Name: PanelShown
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -147,7 +147,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PanelInformationHiding
+  m_Name: PanelHiding
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -171,7 +171,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PanelInformationShowing
+  m_Name: PanelShowing
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -195,7 +195,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PanelInformationHidden
+  m_Name: PanelHidden
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -240,6 +240,6 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 0, y: -120, z: 0}
   m_EntryPosition: {x: 0, y: 0, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 720, y: 0, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102674182991221022}

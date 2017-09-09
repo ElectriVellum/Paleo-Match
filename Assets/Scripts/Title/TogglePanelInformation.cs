@@ -2,16 +2,20 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.Title
 {
-    public class ToggleMusic : MonoBehaviour
+    public class TogglePanelInformation : MonoBehaviour
     {
         [SerializeField()]
         private Toggle _toggle;
 
-        public ToggleMusic()
+        [SerializeField()]
+        private Animator _animator;
+
+        public TogglePanelInformation()
         {
             _toggle = null;
+            _animator = null;
         }
 
         private void Awake()
@@ -24,13 +28,14 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            _toggle.isOn = !AudioSystemManager.Instance.MuteMusic;
+            _toggle.isOn = _animator.GetBool("Visible");
         }
 
         public void ToggleOnValueChanged(bool value)
         {
             AudioSystemManager.Instance.PlayButtonClickSound();
-            AudioSystemManager.Instance.MuteMusic = !_toggle.isOn;
+            AudioSystemManager.Instance.PlayWindowShowSound();
+            _animator.SetBool("Visible", _toggle.isOn);
         }
     }
 }
